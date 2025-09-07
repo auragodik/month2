@@ -18,3 +18,4 @@
 # print(type(123123))
 # print(type('spisladko'))
 # print(car_honda.color)
+print('helllo wrld')
