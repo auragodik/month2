@@ -1,0 +1,21 @@
+
+class Vehicle:
+    def start(self):
+        print("Vehicle starting")
+
+class Car(Vehicle):
+    def start(self):
+        super().start()
+        print("Car starting")
+
+class ElectricCar(Vehicle):
+    def start(self):
+        super().start()
+        pass
+
+class Tesla(ElectricCar, Car):
+    def start(self):
+        super().start()
+        print("Tesla ready")
+# print(Tesla.__mro__)
+Tesla().start()
