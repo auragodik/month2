@@ -11,11 +11,9 @@ class Car(Vehicle):
 class ElectricCar(Vehicle):
     def start(self):
         super().start()
-        pass
-
 class Tesla(ElectricCar, Car):
     def start(self):
         super().start()
         print("Tesla ready")
-# print(Tesla.__mro__)
+print(Tesla.__mro__)
 Tesla().start()
